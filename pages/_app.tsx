@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import { useState } from "react";
+import { trpc } from "@/utils/trpc";
 
 import {
   Hydrate,
@@ -21,4 +22,4 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   );
 };
 
-export default App;
+export default trpc.withTRPC(App);
