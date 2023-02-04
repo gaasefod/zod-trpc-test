@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 
 import { TbLoader, TbAlertCircle } from "react-icons/tb";
 
-import Style from "@/styles/Home.module.scss";
+import Style from "@/styles/Style.module.scss";
 
 import { APISchema } from "@/schema/api";
 import type { APIResponse } from "@/schema/api";

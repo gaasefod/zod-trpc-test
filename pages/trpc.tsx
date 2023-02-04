@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 import { TbLoader, TbAlertCircle } from "react-icons/tb";
 
-import Style from "@/styles/Home.module.scss";
+import Style from "@/styles/Style.module.scss";
 
 import { trpc } from "@/utils/trpc";
 import Head from "next/head";
