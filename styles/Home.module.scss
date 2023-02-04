@@ -1,0 +1,52 @@
+.wrapper {
+  min-height: 100vh;
+  background: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+
+  display: grid;
+  place-items: center;
+
+  & > * {
+    padding: 30px;
+    border-radius: 10px;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .wrapper__loader {
+    background: #202020;
+    border: 2px solid #333333;
+
+    svg {
+      animation: loader 750ms infinite linear;
+    }
+  }
+
+  .wrapper__error {
+    background: transparentize(#f56476, 0.75);
+    border: 2px solid #f56476;
+    gap: 10px;
+  }
+
+  .wrapper__data {
+    place-items: start;
+
+    max-width: 768px;
+    width: 100%;
+    background: #202020;
+    border: 2px solid #333333;
+
+    strong {
+      color: #1cfeba;
+    }
+  }
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
