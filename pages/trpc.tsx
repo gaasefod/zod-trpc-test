@@ -7,7 +7,7 @@ import Style from "@/styles/Home.module.scss";
 import { trpc } from "@/utils/trpc";
 import Head from "next/head";
 
-const Home: NextPage = (): JSX.Element => {
+const TRPCPage: NextPage = (): JSX.Element => {
   const query = trpc.pokedex.useQuery({ name: "national" });
 
   if (query.isLoading) {
@@ -45,4 +45,4 @@ const Home: NextPage = (): JSX.Element => {
   );
 };
 
-export default Home;
+export default TRPCPage;
