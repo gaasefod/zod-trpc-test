@@ -8,7 +8,7 @@ import { trpc } from "@/utils/trpc";
 import Head from "next/head";
 
 const Home: NextPage = (): JSX.Element => {
-  const query = trpc.test.useQuery({ text: "John Doe" });
+  const query = trpc.pokedex.useQuery({ name: "national" });
 
   if (query.isLoading) {
     return (
